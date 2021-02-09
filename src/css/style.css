@@ -1,0 +1,88 @@
+body {
+    background-color:plum;
+    background-image: url(images/anna-sullivan--tR4fnNJW2A-unsplash-rs.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Libre Baskerville';
+}
+#donut-to-click {
+    background: none;
+    border-style: none;
+}
+#donut-to-click:active {
+    transform: scale(1.2);
+    transform:rotate(1.5);
+}
+button:focus {
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    font-size: 25px;
+    background-color: rgba(255, 183, 195, .7);
+}
+.auto-clickers,
+.donut-multis {
+    background-color:rgba(238, 198, 202, .85);
+    padding: 30px;
+    max-height: 300px;
+}
+#auto-click-button,
+#multiplier-button {
+    padding: 10px;
+    background-color: lightcoral;
+    border-style: none;
+    font-weight: bold;
+}
+#auto-click-button:hover,
+#multiplier-button:hover {
+    background-color: lightsalmon;
+}
+#auto-click-button:active,
+#multiplier-button:active {
+    transform: scale(1.1);
+}
+#donut-counter {
+    background-color: rgba(255, 183, 195, .7);
+    padding: 5px;
+    margin-bottom: 2px;
+}
+#donuts-per-sec {
+    font-size: 12px;
+    background-color: rgba(255, 183, 195, .7);
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.counter-displays {
+    justify-content: center;
+}
+.dropdown1-content,
+.dropdown2-content,
+.dropdown3-content{
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    max-width: 300px;
+    margin-top: 0px;
+}
+.dropdown1:hover .dropdown1-content,
+.dropdown2:hover .dropdown2-content,
+.dropdown3:hover .dropdown3-content{
+    display: block;
+    background-color: rgba(255, 183, 195, .9);
+    padding: 1rem;
+    font-size: 15px;
+    position:absolute;
+}
+.fas {
+    font-size: 50px;
+}
+.click-director {
+    font-size: 20px;
+    font-weight: bold;
+}

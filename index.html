@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src\css\style.css">
+    <link rel="stylesheet" href="src\css\layout.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway|Merriweather">
+    <script src="https://kit.fontawesome.com/8c7522ee26.js" crossorigin="anonymous"></script>  
+    <title>Module 4 Project</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="dropdown1">
+                <p>About the Game</p>
+                <span class="dropdown1-content">
+                    A game for anyone who's tired of making <em>real</em> donuts. Now you can make virtual donuts with simple mouse clicks!<br>
+                    Just click the cartoon donut to get started. As you collect more donuts, you'll unlock the ability to purchase <strong>auto-clickers</strong> and <strong>donut multipliers</strong> with the donuts you've made (it takes donuts to make donuts?).<br>
+                    Auto-clickers will make donuts for you each second. One auto-clicker will add one donut per second, two auto-clickers will add 2 donuts per second, etc.<br>
+                    Donut multipliers will increase the number of donuts made with each click (auto-clicks included). Each multiplier increases the value of a click by 20%.<br>
+                    You'll need more donuts to purchase each auto-clicker or multiplier. Naturally.<br>
+                </span>
+            </div>
+            <div class="dropdown2">
+                <p>The Inspiration</p>
+                <p class="dropdown2-content"><a href="https://orteil.dashnet.org/cookieclicker/">
+                    The Original Cookie Clicker
+                </a></p>
+            </div>
+            <div class="dropdown3">
+                <p>Contact</p>
+                <p class="dropdown3-content">
+                    Created by Tara E. Johnson<br>
+                    <a href="https://taraejohnson.github.io/">See my portfolio
+                    </a><br>
+                    <a href="https://github.com/taraejohnson">Find me on Github</a>
+                </p>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+
+        <main class="container">
+            <section class="counter-displays">  
+                <h1 id="donut-counter">Donuts</h1>
+                <p id="donuts-per-sec">You're making 0 donuts each second</p>
+            </section>
+            <section class="main-donut">
+                <button id="donut-to-click"><img src="images\donut2.png" /></button>
+            </section>
+
+            <section class="click-director">
+                <i class="fas fa-hand-point-right"></i>
+                <p>Click here!</p>
+            </section>
+
+            <section class="auto-clickers">
+                <button id="auto-click-button">Buy Auto-Clicker</button><br>
+                <p id="auto-click-display">Auto-Clickers Owned: 0</p>
+                <p id="current-auto-click-cost">Purchase auto-clicker with 100 donuts</p>
+            </section>
+
+            <section class="donut-multis">
+                <button id="multiplier-button">Buy Donut Multiplier</button><br>
+                <p id="multiplier-display">Multipliers Owned</p>
+                <p id="current-multiplier-cost">Buy Donut Multiplier with 10 donuts</p>
+            </section>
+
+        </main>
+    </div>
+    <script src="src\js\app.js" type="module"></script>
+    <script src="src\js\DonutMaker.js" type="module"></script>
+
+</body>
+</html>
