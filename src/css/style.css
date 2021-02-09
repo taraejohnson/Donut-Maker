@@ -1,6 +1,6 @@
 body {
     background-color:plum;
-    background-image: url(images/anna-sullivan--tR4fnNJW2A-unsplash-rs.jpg);
+    background-image: url(images/anna-sullivan--tR4fnNJW2A-unsplash.jpg);
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
@@ -12,14 +12,14 @@ body {
     border-style: none;
 }
 #donut-to-click:active {
-    transform: scale(1.2);
-    transform:rotate(1.5);
+    transform: scale(1.1);
 }
 button:focus {
     outline: none;
 }
 a {
     text-decoration: none;
+    color: #69626d;
 }
 nav {
     font-size: 25px;
@@ -30,21 +30,29 @@ nav {
     background-color:rgba(238, 198, 202, .85);
     padding: 30px;
     max-height: 300px;
+    max-width: 150px;
 }
 #auto-click-button,
-#multiplier-button {
+#multiplier-button,
+#reset {
     padding: 10px;
     background-color: lightcoral;
     border-style: none;
     font-weight: bold;
 }
 #auto-click-button:hover,
-#multiplier-button:hover {
+#multiplier-button:hover,
+#reset:hover {
     background-color: lightsalmon;
 }
 #auto-click-button:active,
-#multiplier-button:active {
+#multiplier-button:active,
+#reset:active {
     transform: scale(1.1);
+}
+#auto-click-button:disabled,
+#multiplier-button:disabled {
+    background-color:lightslategray;
 }
 #donut-counter {
     background-color: rgba(255, 183, 195, .7);
@@ -66,8 +74,7 @@ nav {
 .dropdown3-content{
     display: none;
     position: absolute;
-    min-width: 200px;
-    max-width: 300px;
+    width: 300px;
     margin-top: 0px;
 }
 .dropdown1:hover .dropdown1-content,
@@ -79,10 +86,15 @@ nav {
     font-size: 15px;
     position:absolute;
 }
+.dropdown3:hover .dropdown3-content{
+    right: 0;
+}
 .fas {
     font-size: 50px;
+    color:#77567a;
 }
 .click-director {
     font-size: 20px;
     font-weight: bold;
+    color:#77567a;
 }
